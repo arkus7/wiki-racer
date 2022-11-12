@@ -5,4 +5,15 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "wiki-racer-rs"
+path = "src/main.rs"
+
+[lib]
+name = "wiki_racer"
+path = "src/lib/lib.rs"
+
 [dependencies]
+anyhow = "1.0.66"
+reqwest = { version = "0.11.12", features = ["json"] }
+tl = "0.7.7"
